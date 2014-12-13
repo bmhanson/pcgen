@@ -1,10 +1,5 @@
 
-Default	CATEGORY:Internal
-	DEFINE:Proficiency_Bonus|0
-	BONUS:VAR|Proficiency_Bonus|(TL+7)/4
-	DEFINE:BlindsightRange|0
-	DEFINE:DarkvisionRange|0
-	DEFINE:TruesightRange|0
+Default	CATEGORY:Internal	DEFINE:Proficiency_Bonus|0	BONUS:VAR|Proficiency_Bonus|(TL+7)/4	DEFINE:BlindsightRange|0	DEFINE:DarkvisionRange|0	DEFINE:TruesightRange|0
 
 Blindsight	CATEGORY:Special Ability			DESC:A creature with blindsight can perceive its surroundings without relying on sight, within a specific radius. Creatures without eyes, such as oozes, and creatures with echolocation or heightened senses, such as bats and true dragons, have this sense.
 Darkvision	CATEGORY:Special Ability			DESC:Many creatures in the worlds of D&D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can't discern color in darkness, only shades of gray.
@@ -178,63 +173,64 @@ Shield Proficiency		KEY:Shield Proficiency			TYPE:ShieldProf							CATEGORY:Inte
 #	BONUS:WEAPONPROF=xxx|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,xxx
 
 # Handles the Proficiency Bonus for Classes, to avoid the inherent overlap PCGen will allow if the tag is not an exact match.
-CATEGORY=Internal|Default.MOD
-	BONUS:WEAPONPROF=Club|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Club			
-	BONUS:WEAPONPROF=Dagger|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Dagger		
-	BONUS:WEAPONPROF=Greatclub|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Greatclub		
-	BONUS:WEAPONPROF=Handaxe|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Handaxe		
-	BONUS:WEAPONPROF=Javelin|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Javelin		
-	BONUS:WEAPONPROF=Light Hammer|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Light Hammer	
-	BONUS:WEAPONPROF=Mace|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Mace			
-	BONUS:WEAPONPROF=Quarterstaff|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Quarterstaff	
-	BONUS:WEAPONPROF=Sickle|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Sickle		
-	BONUS:WEAPONPROF=Spear|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Spear				
-	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Unarmed Strike	
-	BONUS:WEAPONPROF=Crossbow (Light)|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Crossbow (Light)	
-	BONUS:WEAPONPROF=Dart|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Dart			
-	BONUS:WEAPONPROF=Shortbow|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Shortbow		
-	BONUS:WEAPONPROF=Sling|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Sling				
-	BONUS:WEAPONPROF=Battleaxe|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Battleaxe		
-	BONUS:WEAPONPROF=Flail|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Flail				
-	BONUS:WEAPONPROF=Glaive|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Glaive		
-	BONUS:WEAPONPROF=Greataxe|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Greataxe		
-	BONUS:WEAPONPROF=Greatsword|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Greatsword		
-	BONUS:WEAPONPROF=Halberd|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Halberd		
-	BONUS:WEAPONPROF=Lance|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Lance				
-	BONUS:WEAPONPROF=Longsword|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Longsword		
-	BONUS:WEAPONPROF=Maul|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Maul			
-	BONUS:WEAPONPROF=Morningstar|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Morningstar			
-	BONUS:WEAPONPROF=Pike|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Pike			
-	BONUS:WEAPONPROF=Rapier|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Rapier		
-	BONUS:WEAPONPROF=Scimitar|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Scimitar		
-	BONUS:WEAPONPROF=Shortsword|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Shortsword		
-	BONUS:WEAPONPROF=Trident|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Trident		
-	BONUS:WEAPONPROF=War Pick|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,War Pick		
-	BONUS:WEAPONPROF=Warhammer|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Warhammer		
-	BONUS:WEAPONPROF=Whip|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Whip			
-	BONUS:WEAPONPROF=Blowgun|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Blowgun		
-	BONUS:WEAPONPROF=Crossbow (Hand)|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Crossbow (Hand)	
-	BONUS:WEAPONPROF=Crossbow (Heavy)|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Crossbow (Heavy)	
-	BONUS:WEAPONPROF=Longbow|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Longbow		
-	BONUS:WEAPONPROF=Net|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Net			
-	BONUS:SKILL|Athletics|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Athletics		
-	BONUS:SKILL|Acrobatics|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Acrobatics		
-	BONUS:SKILL|Sleight of Hand|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Sleight of Hand	
-	BONUS:SKILL|Stealth|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Stealth		
-	BONUS:SKILL|Arcana|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Arcana		
-	BONUS:SKILL|History|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,History		
-	BONUS:SKILL|Investigation|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Investigation	
-	BONUS:SKILL|Nature|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Nature		
-	BONUS:SKILL|Religion|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Religion		
-	BONUS:SKILL|Animal Handling|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Animal Handling	
-	BONUS:SKILL|Insight|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Insight		
-	BONUS:SKILL|Medicine|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Medicine		
-	BONUS:SKILL|Perception|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Perception		
-	BONUS:SKILL|Survival|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Survival		
-	BONUS:SKILL|Deception|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Deception		
-	BONUS:SKILL|Intimidation|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Intimidation	
-	BONUS:SKILL|Performance|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Performance		
-	BONUS:SKILL|Persuasion|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Persuasion		
+###Block: Weapon Proficiency Bonus
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Club|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Club			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Dagger|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Dagger		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Greatclub|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Greatclub		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Handaxe|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Handaxe		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Javelin|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Javelin		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Light Hammer|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Light Hammer	
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Mace|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Mace			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Quarterstaff|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Quarterstaff	
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Sickle|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Sickle		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Spear|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Spear				
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Unarmed Strike|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Unarmed Strike	
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Crossbow (Light)|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Crossbow (Light)	
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Dart|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Dart			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Shortbow|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Shortbow		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Sling|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Sling				
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Battleaxe|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Battleaxe		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Flail|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Flail				
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Glaive|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Glaive		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Greataxe|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Greataxe		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Greatsword|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Greatsword		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Halberd|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Halberd		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Lance|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Lance				
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Longsword|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Longsword		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Maul|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Maul			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Morningstar|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Morningstar			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Pike|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Pike			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Rapier|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Rapier		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Scimitar|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Scimitar		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Shortsword|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Shortsword		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Trident|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Trident		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=War Pick|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,War Pick		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Warhammer|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Warhammer		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Whip|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Whip			
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Blowgun|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Blowgun		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Crossbow (Hand)|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Crossbow (Hand)	
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Crossbow (Heavy)|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Crossbow (Heavy)	
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Longbow|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Longbow		
+CATEGORY=Internal|Default.MOD	BONUS:WEAPONPROF=Net|TOHIT|Proficiency_Bonus|TYPE=Class|PREWEAPONPROF:1,Net			
+###Block: Skill Proficiency Bonus
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Athletics|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Athletics		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Acrobatics|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Acrobatics		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Sleight of Hand|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Sleight of Hand	
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Stealth|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Stealth		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Arcana|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Arcana		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|History|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,History		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Investigation|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Investigation	
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Nature|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Nature		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Religion|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Religion		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Animal Handling|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Animal Handling	
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Insight|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Insight		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Medicine|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Medicine		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Perception|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Perception		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Survival|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Survival		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Deception|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Deception		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Intimidation|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Intimidation	
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Performance|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Performance		
+CATEGORY=Internal|Default.MOD	BONUS:SKILL|Persuasion|Proficiency_Bonus|TYPE=Class|PRECSKILL:1,Persuasion		
 
 ###Block: Skill Proficiencies
 Athletics		CATEGORY:Internal	CSKILL:Athletics		
@@ -312,7 +308,7 @@ Champion				KEY:Martial Archetype ~ Champion					CATEGORY:Special Ability	TYPE:M
 Improved Critical			KEY:Champion Archetype ~ Improved Critical				CATEGORY:Special Ability	TYPE:Archetype Ability.Fighter Class Feature.SpecialQuality	DESC: Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.
 Remarkable Athlete		KEY:Champion Archetype ~ Remarkable Athlete			CATEGORY:Special Ability	TYPE:Archetype Ability.Fighter Class Feature.SpecialQuality	DESC: Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus. In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.
 Additional Fighting Style	KEY:Champion Archetype ~ Additional Fighting Style		CATEGORY:Special Ability	TYPE:Archetype Ability.Fighter Class Feature.SpecialQuality	DESC: At 10th level, you can choose a second option from the Fighting Style class feature.
-Superior Critical			KEY:Champion Archetype ~ Superior Critical				CATEGORY:Special Ability	TYPE:Archetype Ability.Fighter Class Feature.SpecialQuality	DESC: Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20.
+Superior Critical			KEY:Champion Archetype ~ Superior Critical				CATEGORY:Special Ability	TYPE:Archetype Ability.Fighter Class Feature.SpecialQuality	DESC: Starting at 15th level, your weapon attacks score a critical hit on a roll of 18-20.
 Survivor				KEY:Champion Archetype ~ Survivor					CATEGORY:Special Ability	TYPE:Archetype Ability.Fighter Class Feature.SpecialQuality	DESC: At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points.
 
 ### Rogue

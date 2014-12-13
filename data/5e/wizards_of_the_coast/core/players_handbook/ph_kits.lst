@@ -1,0 +1,136 @@
+
+
+STARTPACK:LG	VISIBLE:NO	APPLY:INSTANT
+ALIGN:LG
+
+STARTPACK:NG	VISIBLE:NO	APPLY:INSTANT
+ALIGN:NG
+
+STARTPACK:CG	VISIBLE:NO	APPLY:INSTANT
+ALIGN:CG
+
+STARTPACK:LN	VISIBLE:NO	APPLY:INSTANT
+ALIGN:LN
+
+STARTPACK:TN	VISIBLE:NO	APPLY:INSTANT
+ALIGN:TN
+
+STARTPACK:CN	VISIBLE:NO	APPLY:INSTANT
+ALIGN:CN
+
+STARTPACK:LE	VISIBLE:NO	APPLY:INSTANT
+ALIGN:LE
+
+STARTPACK:NE	VISIBLE:NO	APPLY:INSTANT
+ALIGN:NE
+
+STARTPACK:CE	VISIBLE:NO	APPLY:INSTANT
+ALIGN:CE
+
+STARTPACK:UA	VISIBLE:NO	APPLY:INSTANT
+ALIGN:UA
+
+# Equipment Packs
+#STARTPACK:Burglar's Pack		TYPE:Gear	COST:16	SPROP:Includes a backpack, a bag of 1,000 ball bearings, 10 feet of string, a bell, 5 candles, a crowbar, a hammer, 10 pitons, a hooded lantern, 2 flasks of oil, 5 days rations, a tinderbox, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.
+#STARTPACK:Diplomat's Pack		TYPE:Gear	COST:39	SPROP:Includes a chest, 2 cases for maps and scrolls, a set of fine clothes, a bottle o f ink, an ink pen, a lamp, 2 flasks of oil, 5 sheets of paper, a vial of perfume, sealing wax, and soap.
+#STARTPACK:Dungeoneer's Pack		TYPE:Gear	COST:12	SPROP:Includes a backpack, a crowbar, a hammer, 10 pitons, 10 torches, a tinderbox, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.
+#STARTPACK:Entertainer's Pack		TYPE:Gear	COST:40	SPROP:Includes a backpack, a bedroll, 2 costumes, 5 candles, 5 days o f rations, a waterskin, and a disguise kit.
+#STARTPACK:Explorer's Pack		TYPE:Gear	COST:10	SPROP:Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.
+#STARTPACK:Priest's Pack		TYPE:Gear	COST:19	SPROP:Includes a backpack, a blanket, 10 candles, a tinderbox, an alms box, 2 blocks of incense, a censer, vestments, 2 days of rations, and a waterskin.
+#STARTPACK:Scholar's Pack		TYPE:Gear	COST:40	SPROP:Includes a backpack, a book of lore, a bottle of ink, an ink pen, 10 sheets of parchment, a little bag of sand, and a small knife.
+
+
+
+###Block: Appendix D: Creature Statistics
+STARTPACK:Default Creature ~ Bat
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Black Bear
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Boar
+STAT:STR=10|DEX=11|CON=10|INT=10|WIS=11|CHA=11
+
+STARTPACK:Default Creature ~ Brown Bear
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=11|CHA=11
+
+STARTPACK:Default Creature ~ Cat
+STAT:STR=11|DEX=11|CON=10|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Constrictor Snake	
+STAT:STR=11|DEX=10|CON=10|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Crocodile		
+STAT:STR=11|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Dire Wolf		
+STAT:STR=11|DEX=11|CON=11|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Frog			
+STAT:STR=11|DEX=11|CON=10|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Giant Eagle		
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Giant Spider		
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=11|CHA=10
+
+STARTPACK:Default Creature ~ Hawk (Falcon)		
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Imp			
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Lion			
+STAT:STR=11|DEX=11|CON=11|INT=11|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Mastiff			
+STAT:STR=11|DEX=10|CON=10|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Mule			
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Owl			
+STAT:STR=11|DEX=11|CON=10|INT=10|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Panther			
+STAT:STR=10|DEX=11|CON=10|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Poisonous Snake	
+STAT:STR=10|DEX=10|CON=11|INT=11|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Pseudodragon		
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Quasit			
+STAT:STR=11|DEX=11|CON=10|INT=11|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Rat			
+STAT:STR=10|DEX=11|CON=11|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Raven			
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Reef Shark		
+STAT:STR=10|DEX=11|CON=11|INT=11|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Riding Horse		
+STAT:STR=10|DEX=10|CON=10|INT=10|WIS=11|CHA=11
+
+STARTPACK:Default Creature ~ Skeleton		
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Sprite			
+STAT:STR=11|DEX=10|CON=10|INT=10|WIS=11|CHA=11
+
+STARTPACK:Default Creature ~ Tiger			
+STAT:STR=11|DEX=11|CON=10|INT=11|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Warhorse		
+STAT:STR=10|DEX=10|CON=11|INT=10|WIS=10|CHA=11
+
+STARTPACK:Default Creature ~ Wolf			
+STAT:STR=10|DEX=11|CON=10|INT=11|WIS=10|CHA=10
+
+STARTPACK:Default Creature ~ Zombie			
+STAT:STR=11|DEX=10|CON=10|INT=11|WIS=10|CHA=11

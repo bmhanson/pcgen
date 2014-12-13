@@ -1,13 +1,15 @@
 # CVS $Revision: $ $Author: $ -- Sun Aug 17 15:41:15 2014 -- reformated by prettylst.pl v1.51 (build 24906)
 
 # Ability Category			Visible	Editable?		Change Pool?	Fractional values?	Category of Object		Type of Object	Display Location
-ABILITYCATEGORY:Regional														CATEGORY:Regional
-ABILITYCATEGORY:Region					EDITABLE:YES	EDITPOOL:YES					CATEGORY:Regional			TYPE:Region		DISPLAYLOCATION:Misc
+ABILITYCATEGORY:Regional		VISIBLE:NO											CATEGORY:Regional
+ABILITYCATEGORY:Region					EDITABLE:YES	EDITPOOL:NO						CATEGORY:Regional			TYPE:Region		DISPLAYLOCATION:Race
 
 # Ability Category			Visible	Editable?		Change Pool?	Fractional values?	Category of Object		Type of Object	Display Location
 ABILITYCATEGORY:Special Ability	VISIBLE:NO	EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability
 ABILITYCATEGORY:Internal		VISIBLE:NO	EDITABLE:NO		EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Internal
 ABILITYCATEGORY:Language		VISIBLE:NO	EDITABLE:NO		EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Language
+ABILITYCATEGORY:Domain			VISIBLE:NO	EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Domain
+ABILITYCATEGORY:Ability Focus		VISIBLE:NO	EDITABLE:NO		EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Ability Focus
 #
 ABILITYCATEGORY:Languages		VISIBLE:YES	EDITABLE:YES	EDITPOOL:NO		FRACTIONALPOOL:NO		CATEGORY:Language			TYPE:Language	DISPLAYLOCATION:Misc
 
@@ -27,20 +29,19 @@ ABILITYCATEGORY:Sorcerer Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO	
 ABILITYCATEGORY:Wizard Class Feature	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Wizard Class Feature	PLURAL:Wizard Class Features		DISPLAYLOCATION:Class Features
 
 ###Block: Race Ability Pools
-# Ability Category			Visible		Editable?		Change Pool?	Category of Object		Type of Object			Plural description for UI	Display Location
-ABILITYCATEGORY:Human Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Human Race Trait		PLURAL:Human Race Traits	DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Dwarf Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Dwarf Race Trait		PLURAL:Dwarf Race Traits	DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Elf Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Elf Race Trait		PLURAL:Elf Race Traits		DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Gnome Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Gnome Race Trait		PLURAL:Gnome Race Traits	DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Half-Elf Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:HalfElf Race Trait		PLURAL:Half-Elf Race Traits	DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Half-Orc Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:HalfOrc Race Trait		PLURAL:Half-Orc Race Traits	DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Halfling Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Halfling Race Trait	PLURAL:Halfling Race Traits	DISPLAYLOCATION:Race Traits
+# Ability Category			Visible		Editable?		Change Pool?	Category of Object		Type of Object									Plural description for UI	Display Location
+ABILITYCATEGORY:Human Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Human Race Trait.HumanRaceTrait					PLURAL:Human Race Traits	DISPLAYLOCATION:Race Traits
+ABILITYCATEGORY:Dwarf Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Dwarf Race Trait.DwarfRaceTrait					PLURAL:Dwarf Race Traits	DISPLAYLOCATION:Race Traits
+ABILITYCATEGORY:Elf Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Elf Race Trait.ElfRaceTrait						PLURAL:Elf Race Traits		DISPLAYLOCATION:Race Traits
+ABILITYCATEGORY:Gnome Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Gnome Race Trait.GnomeRaceTrait					PLURAL:Gnome Race Traits	DISPLAYLOCATION:Race Traits
+ABILITYCATEGORY:Half-Elf Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:HalfElf Race Trait.Half-Elf Race Trait.HalfElfRaceTrait	PLURAL:Half-Elf Race Traits	DISPLAYLOCATION:Race Traits
+ABILITYCATEGORY:Half-Orc Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:HalfOrc Race Trait.Half-Orc Race Trait.HalfOrcRaceTrait	PLURAL:Half-Orc Race Traits	DISPLAYLOCATION:Race Traits
+ABILITYCATEGORY:Halfling Race Trait	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		CATEGORY:Special Ability	TYPE:Halfling Race Trait.HalflingRaceTrait				PLURAL:Halfling Race Traits	DISPLAYLOCATION:Race Traits
 
 ###Block: Class Bonus Feats and Selections
 # Ability Category		Visible		Editable?		Change Pool?	Fractional values?	Category of Object		Type of Object		Plural description for UI	Display Location
-ABILITYCATEGORY:Fighter Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						CATEGORY:FEAT			TYPE:Fighter		PLURAL:Fighter Bonus Feats	DISPLAYLOCATION:Feats
-ABILITYCATEGORY:Wizard Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO						CATEGORY:FEAT			TYPE:Wizard			PLURAL:Wizard Bonus Feats	DISPLAYLOCATION:Feats
-ABILITYCATEGORY:Monk Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:MonkBonusFeat	PLURAL:Monk Bonus Feats		DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Fighter Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		POOL:Pool_FighterFeat	CATEGORY:FEAT			TYPE:Fighter		PLURAL:Fighter Bonus Feats	DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Wizard Feat	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO		POOL:Pool_WizardFeat	CATEGORY:FEAT			TYPE:Wizard			PLURAL:Wizard Bonus Feats	DISPLAYLOCATION:Feats
 
 
 ###Block: Special Ability and subgroups
@@ -52,13 +53,24 @@ ABILITYCATEGORY:Favored Enemy Bonus				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES
 ABILITYCATEGORY:Turn Undead					VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Special Ability	TYPE:TurnUndead															PLURAL:Turn Undead				DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Expert Class Skills				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Special Ability	TYPE:ExpertClassSkills														PLURAL:Expert Class Skills			DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Simple Weapon Proficiency Choice	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Special Ability										ABILITYLIST:Single Simple Weapon Proficiency	PLURAL:Simple Weapon Proficiency Choice	DISPLAYLOCATION:Class Features
-ABILITYCATEGORY:Special Mount Choice			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Internal			TYPE:SpecialMountSelection																				DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Animal Trick					VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Special Ability	TYPE:AnimalTrick															PLURAL:Animal Tricks				DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Raven Language Choice			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO							CATEGORY:Internal												ABILITYLIST:Raven Language Choice										DISPLAYLOCATION:Race Traits
-ABILITYCATEGORY:Familiar Choice				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Special Ability	TYPE:FamiliarChoice														PLURAL:Familiar Choice				DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Wizard Subclass				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Wizard Subclass														PLURAL:Prohibited Wizard School		DISPLAYLOCATION:Class Features
 ABILITYCATEGORY:Prohibited Wizard School			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Special Ability	TYPE:Prohibited Wizard School													PLURAL:Prohibited Wizard School		DISPLAYLOCATION:Class Features
+# Selection Pools for Optional Choices <--- realigns to the RSRD version
+ABILITYCATEGORY:Animal Companion Selection		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Internal			TYPE:AnimalCompanionSelection									PLURAL:Familiar Choice				DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Special Mount Selection			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Internal			TYPE:SpecialMountSelection																DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Familiar Selection				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Internal			TYPE:FamiliarSelection										PLURAL:Familiar Choice				DISPLAYLOCATION:Class Features
+# old version
+ABILITYCATEGORY:Familiar Choice				VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Special Ability	TYPE:FamiliarChoice														PLURAL:Familiar Choice				DISPLAYLOCATION:Class Features
+ABILITYCATEGORY:Special Mount Choice			VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:NO											CATEGORY:Internal			TYPE:SpecialMountSelection																				DISPLAYLOCATION:Class Features
 
+# Replacement
+ABILITYCATEGORY:Monk Feat LVL 1	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:MonkBonusFeatLVL1			PLURAL:Monk Feats			DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Monk Feat LVL 2	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:MonkBonusFeatLVL2			PLURAL:Monk Feats			DISPLAYLOCATION:Feats
+ABILITYCATEGORY:Monk Feat LVL 6	VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:MonkBonusFeatLVL6			PLURAL:Monk Feats			DISPLAYLOCATION:Feats
+# Invalid
+ABILITYCATEGORY:Monk Feat		VISIBLE:QUALIFY	EDITABLE:YES	EDITPOOL:YES	FRACTIONALPOOL:NO		CATEGORY:Special Ability	TYPE:MonkBonusFeat	PLURAL:Monk Bonus Feats		DISPLAYLOCATION:Feats
 
 
 ###Block: Alternate Class Features & Misc.

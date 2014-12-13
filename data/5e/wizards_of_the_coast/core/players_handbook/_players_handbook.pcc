@@ -1,0 +1,46 @@
+# CVS $Revision$ $Author$ -- Fri May  3 14:36:53 2013 -- reformated by prettylst.pl v1.50 (build 19967)
+CAMPAIGN:Player's Handbook
+KEY:Player's Handbook (5e)
+RANK:1
+BOOKTYPE:Core
+GAMEMODE:5e
+STATUS:BETA
+TYPE:Wizards of the Coast.Core
+SOURCELONG:Player's Handbook
+SOURCESHORT:PH
+SOURCEDATE:2014-09
+PUBNAMELONG:Wizards of the Coast
+PUBNAMESHORT:WotC
+PUBNAMEWEB:http://www.wizards.com
+
+INFOTEXT:D&D 5e Player's Handbook
+
+PCC:../universal_rules/_universal_rules.pcc
+
+ABILITY:ph_abilities.lst
+ABILITYCATEGORY:ph_abilitycategories.lst
+CLASS:ph_classes.lst
+COMPANIONMOD:ph_companionmods.lst
+DEITY:ph_deities.lst
+
+EQUIPMENT:ph_equip.lst
+EQUIPMOD:ph_equipmods.lst
+FEAT:ph_feats.lst
+
+KIT:ph_kits.lst
+LANGUAGE:ph_languages.lst
+
+
+ARMORPROF:ph_profs_armor.lst
+SHIELDPROF:ph_profs_shield.lst
+WEAPONPROF:ph_profs_weapon.lst
+
+RACE:ph_races.lst
+
+SKILL:ph_skills.lst
+
+SPELL:ph_spells.lst
+TEMPLATE:ph_templates.lst
+
+###Block: Revisions
+# BD - 0.01 Initial update 
